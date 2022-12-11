@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a1fb068210.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul class="main-nav__links">
+          <li><a class="main-nav__link" href="">Umiejętności</a></li>
+          <li><a class="main-nav__link" href="">Portfolio</a></li>
+          <li><a class="main-nav__link" href="">O mnie</a></li>
+          <li><a class="main-nav__link" href="">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__text-container">
+          <div class="hero__text">
+            <p class="text__hey">Hej, <span>👋</span></p>
+            <h1>z tej strony <span>Łukasz Sodolski</span></h1>
+            <p>Jestem programistą specjalizującym się</p>
+            <p>we <span>Frontend Developmencie</span></p>
+            <div class="hero__cta">
+              <a class="hero__cta__projects">Moje Projekty</a>
+              <div class="hero__cta__icons">
+                <i class="fa-brands fa-github hero__cta__icon"></i>
+                <i class="fa-brands fa-linkedin hero__cta__icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__shape"></div>
+      </section>
+      <section class="skills max-size-wrapper">
+        <h2 class="section-title">Umiejętności</h2>
+        <div class="skills__flex-container">
+          <div class="skills__img-row reveal left">
+            <figure>
+              <img class="skills__img" src="/img/html-logo.png" alt="" />
+              <figcaption class="skills__figcaption">Html</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/css-logo.png" alt="" />
+              <figcaption class="skills__figcaption">CSS</figcaption>
+            </figure>
+
+            <figure>
+              <img
+                class="skills__img"
+                src="/img/6242e5dd4337267623f1e7a5_js.svg"
+                alt=""
+              />
+              <figcaption class="skills__figcaption">Javascript</figcaption>
+            </figure>
+          </div>
+          <div class="skills__img-row reveal right">
+            <figure>
+              <img class="skills__img" src="/img/typescript.png" alt="" />
+              <figcaption class="skills__figcaption">TypeScript</figcaption>
+            </figure>
+            <figure>
+              <img
+                class="skills__img skills__react-img"
+                src="/img/React-icon.svg.png"
+                alt=""
+              />
+              <figcaption class="skills__figcaption">React</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/redux-logo.png" alt="" />
+              <figcaption class="skills__figcaption">Redux</figcaption>
+            </figure>
+          </div>
+          <div class="skills__img-row reveal left">
+            <figure>
+              <img class="skills__img" src="/img/sass-logo.png" alt="" />
+              <figcaption class="skills__figcaption">Sass</figcaption>
+            </figure>
+            <figure>
+              <img
+                class="skills__img"
+                src="img/Tailwind_CSS_Logo.svg.png"
+                alt=""
+              />
+              <figcaption class="skills__figcaption">Tailwind</figcaption>
+            </figure>
+
+            <figure>
+              <img class="skills__img" src="/img/25231.png" alt="" />
+              <figcaption class="skills__figcaption">Git</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="projects max-size-wrapper">
+        <h2 class="section-title">Moje projekty</h2>
+        <div class="projects__row">
+          <div class="projects__img-container">
+            <img class="projects__img" src="./img/animeList.PNG" alt="" />
+          </div>
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Projekt napisany przy użyciu Reacta oraz biblioteki React Router,
+              który za pomocą pobranych z API danych pozwala na stworzenie oraz
+              edytowanie własnej listy anime, wyszukiwanie poszczególnych
+              tytułów, oraz powiązywanie wprowadzonych danych z kontem
+              użytkownia stworzonym za pomocą Firebase.
+            </p>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+              magnam natus nostrum incidunt deleniti tempore dicta
+              reprehenderit, ducimus architecto officiis tenetur aliquid sunt
+              vero ipsum ipsa est excepturi adipisci atque?
+            </p>
+          </div>
+          <div class="projects__img-container">
+            <img class="projects__img" src="./img/portfolio.PNG" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="about max-size-wrapper">
+        <h2 class="section-title">O Mnie</h2>
+        <div class="about__wrapper">
+          <div class="about__img-container">
+            <img
+              class="about__img"
+              src="./img/CV_Okrag_Male_001-modified.png"
+            />
+          </div>
+          <div class="about__text-content">
+            <p class="about__text-content__top">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
+              laboriosam dolore autem, quam alias ratione explicabo veritatis
+              natus, deleniti consequatur molestiae? Doloribus odit eius harum
+              neque dolore velit laboriosam? Iste!
+            </p>
+            <br />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              molestias corporis dolorum facere perspiciatis vel cupiditate
+              itaque ipsum. Praesentium officia ipsam inventore, unde non dicta
+              porro nostrum in modi voluptates.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="contact max-size-wrapper">
+        <h2 class="section-title">Kontakt</h2>
+        <div class="contact_container">
+          <p>Porozmawiajmy o współpracy!</p>
+          <form action="">
+            <label for=""><input type="text" /></label>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer><p>Made in 2022 by Łukasz Sodolski</p></footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
