@@ -22,10 +22,10 @@
     <header>
       <nav class="main-nav">
         <ul class="main-nav__links">
-          <li><a class="main-nav__link" href="">Umiejętności</a></li>
-          <li><a class="main-nav__link" href="">Portfolio</a></li>
-          <li><a class="main-nav__link" href="">O mnie</a></li>
-          <li><a class="main-nav__link" href="">Kontakt</a></li>
+          <li><a class="main-nav__link" href="#skills">Umiejętności</a></li>
+          <li><a class="main-nav__link" href="#portfolio">Portfolio</a></li>
+          <li><a class="main-nav__link" href="#about">O mnie</a></li>
+          <li><a class="main-nav__link" href="#contact">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +38,7 @@
             <p>Jestem programistą specjalizującym się</p>
             <p>we <span>Frontend Developmencie</span></p>
             <div class="hero__cta">
-              <a class="hero__cta__projects">Moje Projekty</a>
+              <a class="button">Moje Projekty</a>
               <div class="hero__cta__icons">
                 <i class="fa-brands fa-github hero__cta__icon"></i>
                 <i class="fa-brands fa-linkedin hero__cta__icon"></i>
@@ -48,7 +48,7 @@
         </div>
         <div class="hero__shape"></div>
       </section>
-      <section class="skills max-size-wrapper">
+      <section class="skills max-size-wrapper" id="skills">
         <h2 class="section-title">Umiejętności</h2>
         <div class="skills__flex-container">
           <div class="skills__img-row reveal left">
@@ -109,7 +109,7 @@
           </div>
         </div>
       </section>
-      <section class="projects max-size-wrapper">
+      <section class="projects max-size-wrapper" id="portfolio">
         <h2 class="section-title">Moje projekty</h2>
         <div class="projects__row">
           <div class="projects__img-container">
@@ -139,7 +139,7 @@
           </div>
         </div>
       </section>
-      <section class="about max-size-wrapper">
+      <section class="about max-size-wrapper" id="about">
         <h2 class="section-title">O Mnie</h2>
         <div class="about__wrapper">
           <div class="about__img-container">
@@ -165,12 +165,30 @@
           </div>
         </div>
       </section>
-      <section class="contact max-size-wrapper">
+      <section class="contact max-size-wrapper" id="contact">
         <h2 class="section-title">Kontakt</h2>
-        <div class="contact_container">
-          <p>Porozmawiajmy o współpracy!</p>
-          <form action="">
-            <label for=""><input type="text" /></label>
+        <div class="contact__container">
+          <div class="contact__text">
+            <p>Porozmawiajmy o współpracy!</p>
+            <p>Jestem równiez dostępny pod adresem: l.sodolski@gmail.com</p>
+          </div>
+          <form action="" class="contact__form">
+            <div class="form__input-container">
+              <label for="email">Adres E-mail</label>
+              <input type="text" id="email" class="form__input" />
+            </div>
+            <div class="form__input-container">
+              <label for="name">Twoje imię:</label>
+              <input type="text" id="name" class="form__input" />
+            </div>
+
+            <label for="message">Miejsce na wiadomość:</label>
+            <textarea
+              id="message"
+              class="contact__form-message"
+              type="text"
+            ></textarea>
+            <button class="button button--wide">Wyślij!</button>
           </form>
         </div>
       </section>

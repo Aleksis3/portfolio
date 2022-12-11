@@ -2,6 +2,7 @@ html,
 body {
   font-family: sans-serif;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
   font-size: 62.5%;
   width: 100%;
 }
@@ -117,15 +118,15 @@ header {
   overflow: hidden;
   font-size: 5rem;
 }
-@-moz-keyframes spin {
+@keyframes spin {
   0% {
-    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
-    -moz-transform: rotate(35deg);
+    transform: rotate(35deg);
   }
   100% {
-    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 /* @-webkit-keyframes spin {
@@ -178,16 +179,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.hero__cta__projects {
-  background-color: #eeeeee;
-  color: white;
-  padding: 8px 12px;
-  border: 1px #000 solid;
-  border-radius: 10rem;
-  background-color: var(--purple);
-  cursor: pointer;
 }
 
 .hero__cta__icons {
@@ -357,11 +348,63 @@ header {
 }
 
 /* CONTACT */
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--purple);
+  font-weight: bold;
+  margin: -3rem 0 3rem 0;
+}
 
+.contact__container {
+  border-radius: 10px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.contact__email {
+  font-weight: bold;
+}
+
+.contact__form {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__inputs-container {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.form__input-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.form__input {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.contact__form-button {
+  width: 10rem;
+}
+
+.contact__form-message {
+  height: 30rem;
+  width: 50rem;
+  font-size: 2rem;
+}
 /* FOOTER */
 footer {
   font-size: 2rem;
   border-top: 1px var(--purple) solid;
+  margin-top: 1.2rem;
   color: black;
   padding: 0.5rem 3rem;
 }
@@ -371,11 +414,25 @@ footer {
   font-size: 4rem;
   font-weight: 400;
   width: fit-content;
-  margin: 0 auto 8rem auto;
+  margin: 5rem auto;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 2px;
   border-bottom: 3px #3a86ff solid;
+}
+
+.button {
+  background-color: #eeeeee;
+  color: white;
+  padding: 8px 12px;
+  border: 1px #000 solid;
+  border-radius: 10rem;
+  background-color: var(--purple);
+  cursor: pointer;
+}
+
+.button--wide {
+  width: 15rem;
 }
 
 .reveal {
