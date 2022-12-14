@@ -1,3 +1,4 @@
+// Enables skill rows animations after reaching a certain high
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
   for (let i = 0; i < reveals.length; i++) {

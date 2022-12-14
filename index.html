@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="main-nav">
         <ul class="main-nav__links">
           <li><a class="main-nav__link" href="#skills">Umiejętności</a></li>
@@ -108,7 +108,6 @@
               />
               <figcaption class="skills__figcaption">Tailwind</figcaption>
             </figure>
-
             <figure>
               <img class="skills__img" src="/img/25231.png" alt="" />
               <figcaption class="skills__figcaption">Git</figcaption>
@@ -121,6 +120,10 @@
         <div class="projects__row">
           <div class="projects__img-container">
             <img class="projects__img" src="./img/animeList.PNG" alt="" />
+            <div class="projects__img-text">
+              <p>Kod źródłowy</p>
+              <p>Wersja <span>LIVE</span></p>
+            </div>
           </div>
           <div class="projects__text-container">
             <p class="projects__text">
@@ -135,10 +138,7 @@
         <div class="projects__row projects__row--2">
           <div class="projects__text-container">
             <p class="projects__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
-              magnam natus nostrum incidunt deleniti tempore dicta
-              reprehenderit, ducimus architecto officiis tenetur aliquid sunt
-              vero ipsum ipsa est excepturi adipisci atque?
+              Obecna strona, stworzona głównie za pomocą czystego CSSa
             </p>
           </div>
           <div class="projects__img-container">
@@ -183,15 +183,16 @@
             </p>
           </div>
           <form action="" class="contact__form">
-            <div class="form__input-container">
-              <label for="email">Adres E-mail</label>
-              <input type="text" id="email" class="form__input" />
+            <div class="form__inputs-container">
+              <div class="form__input-container">
+                <label for="name">Twoje imię:</label>
+                <input type="text" id="name" class="form__input" />
+              </div>
+              <div class="form__input-container">
+                <label for="email">Adres E-mail</label>
+                <input type="text" id="email" class="form__input" />
+              </div>
             </div>
-            <div class="form__input-container">
-              <label for="name">Twoje imię:</label>
-              <input type="text" id="name" class="form__input" />
-            </div>
-
             <label for="message">Miejsce na wiadomość:</label>
             <textarea
               id="message"

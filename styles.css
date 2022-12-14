@@ -18,6 +18,8 @@ body {
   --blue: #4dabf7;
   --blue--2: #3a86ff;
   --purple: #8338ec;
+  --font-s: 1.5rem;
+  --font-m: 2rem;
 }
 
 * {
@@ -42,6 +44,12 @@ header {
   /* clip-path: polygon(100% 0, 42% 41%, 100% 100%); */
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
 .main-nav__links {
   display: flex;
   background-color: #fff;
@@ -49,6 +57,8 @@ header {
   justify-content: space-around;
   border-bottom: 1px #000 solid;
   padding: 1rem;
+  font-weight: bold;
+  color: #222;
 }
 
 .main-nav__link {
@@ -66,6 +76,10 @@ header {
   background-color: var(--purple);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+
+.main-nav__link:hover {
+  color: #000;
 }
 
 .main-nav__link:hover::after {
@@ -87,7 +101,6 @@ header {
   font-size: 2rem;
   margin-left: 15rem;
   width: 70%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -224,7 +237,6 @@ header {
 
 .projects__row {
   display: flex;
-
   font-size: 2.2rem;
 }
 
@@ -232,7 +244,6 @@ header {
   display: flex;
   align-items: center;
   padding-left: 3rem;
-  /* border-left: 8px purple solid; */
 }
 
 .projects__text-container:nth-child(2) {
@@ -242,10 +253,19 @@ header {
 .projects__img-container {
   width: 100%;
   display: flex;
+  position: relative;
+  flex-direction: column;
   flex: 1 0 50%;
   /* border-left: 8px purple solid; */
   padding-left: 5rem;
   padding-top: 5rem;
+}
+
+.projects__img-text {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-top: 1rem;
 }
 
 .projects__img-container:nth-child(2) {
@@ -257,19 +277,36 @@ header {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.projects__text {
+  margin: 0 3rem;
+}
+
 @media only screen and (max-width: 58rem) {
   .projects__row {
     flex-direction: column;
-    gap: 2rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .projects__text-container {
+    margin: 3rem 1rem;
   }
 
   .projects__row--2 {
     flex-direction: column-reverse;
   }
 
+  .projects__img {
+    border-bottom: 2px var(--purple) solid !important;
+  }
+
   .projects__text-container,
   .projects__img-container {
     border: none !important;
+  }
+
+  .projects__img-container {
+    padding-top: 0;
   }
 }
 
@@ -284,13 +321,12 @@ header {
 
 .about {
   min-height: 50vh;
-  font-size: 2.5rem;
+  font-size: var(--font-m);
 }
 
 .about__wrapper {
   display: flex;
   align-items: center;
-
   /* background-color: red; */
   gap: 10rem;
 }
@@ -312,18 +348,13 @@ header {
   content: "";
   height: 100%;
   width: 100%;
-  /* height: 30rem;
-  width: 30rem; */
-  background-color: #494949;
-  background-color: #4dabf7;
   background-color: #8192a9;
   border: 1px #333 solid;
   display: block;
   position: absolute;
   border-radius: 50%;
   z-index: -1;
-  /* right: 8rem;
-  bottom: 5rem; */
+  opacity: 0.5;
   right: 4rem;
   bottom: 3rem;
 }
@@ -331,22 +362,37 @@ header {
 @media only screen and (max-width: 48rem) {
   .about__wrapper {
     flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  .about__img-container,
+  .about__img {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .about__text-content {
+    width: 90%;
   }
 }
 
 /* CONTACT */
+
 .contact__text {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  color: var(--purple);
+  background-color: var(--purple);
+  padding: 1rem;
+  color: white;
+
   font-weight: bold;
   margin: -3rem 0 3rem 0;
 }
 
 .contact__container {
-  border-radius: 10px;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 
@@ -375,6 +421,7 @@ header {
 
 .form__input {
   font-size: 2rem;
+  border: 2px var(--purple) solid;
   padding: 1rem 2rem;
 }
 
@@ -384,15 +431,22 @@ header {
 
 .contact__form-message {
   height: 30rem;
+  max-width: 80%;
+  border: 2px var(--purple) solid;
   width: 50rem;
   font-size: 2rem;
 }
+
+@media only screen and (max-width: 30rem) {
+  .form__inputs-container {
+    flex-direction: column;
+  }
+}
 /* FOOTER */
 footer {
-  font-size: 2rem;
-  border-top: 1px var(--purple) solid;
-  margin-top: 1.2rem;
-  color: black;
+  font-size: var(--font-s);
+  border-top: 1px black solid;
+  margin-top: 3rem;
   padding: 0.5rem 3rem;
 }
 
