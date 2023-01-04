@@ -281,6 +281,11 @@ header {
   margin: 0 3rem;
 }
 
+.projects__live {
+  color: red;
+  margin-left: 0.1rem;
+}
+
 @media only screen and (max-width: 58rem) {
   .projects__row {
     flex-direction: column;
@@ -446,8 +451,14 @@ header {
 footer {
   font-size: var(--font-s);
   border-top: 1px black solid;
+  background: #eee;
   margin-top: 3rem;
   padding: 0.5rem 3rem;
+}
+
+.footer__year {
+  color: var(--blue--2);
+  font-size: bold;
 }
 
 /* GENERAl */

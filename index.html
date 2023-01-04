@@ -119,10 +119,16 @@
         <h2 class="section-title">Moje projekty</h2>
         <div class="projects__row">
           <div class="projects__img-container">
-            <img class="projects__img" src="./img/animeList.PNG" alt="" />
+            <a href="https://yeet-shop.netlify.app" target="_blank">
+              <img class="projects__img" src="./img/nyaan.webp" alt="" />
+            </a>
             <div class="projects__img-text">
-              <p>Kod źródłowy</p>
-              <p>Wersja <span>LIVE</span></p>
+              <a href="https://github.com/Aleksis3/nyaa-anime" target="_blank"
+                >Kod źródłowy</a
+              >
+              <a href="https://anime-nyaan.netlify.app/" target="_blank"
+                >Wersja <span class="projects__live">LIVE</span></a
+              >
             </div>
           </div>
           <div class="projects__text-container">
@@ -138,11 +144,39 @@
         <div class="projects__row projects__row--2">
           <div class="projects__text-container">
             <p class="projects__text">
-              Obecna strona, stworzona głównie za pomocą czystego CSSa
+              Prototyp internetowego sklepu z książkami powstały przy użyciu
+              Reacta, Reduxa oraz Typescripta. Pozwala na składanie
+              spersonalizowanych zamówień oraz na udostępnianie książkowych
+              recenzji (Firebase).
             </p>
           </div>
           <div class="projects__img-container">
+            <a href="https://yeet-shop.netlify.app" target="_blank">
+              <img class="projects__img" src="./img/yeet.webp" alt="" />
+            </a>
+            <div class="projects__img-text">
+              <a href="https://github.com/Aleksis3/Yeet-Shop" target="_blank"
+                >Kod źródłowy</a
+              >
+              <a href="https://yeet-shop.netlify.app" target="_blank"
+                >Wersja <span class="projects__live">LIVE</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__img-container">
             <img class="projects__img" src="./img/portfolio.PNG" alt="" />
+            <div class="projects__img-text">
+              <a href="https://github.com/Aleksis3/portfolio" target="_blank"
+                >Kod źródłowy</a
+              >
+            </div>
+          </div>
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Obecna strona, stworzona głównie za pomocą czystego CSSa
+            </p>
           </div>
         </div>
       </section>
@@ -152,6 +186,7 @@
           <div class="about__img-container">
             <img
               class="about__img"
+              alt="picture of myself"
               src="./img/CV_Okrag_Male_001-modified.png"
             />
           </div>
@@ -204,7 +239,9 @@
         </div>
       </section>
     </main>
-    <footer><p>Made in 2022 by Łukasz Sodolski</p></footer>
+    <footer>
+      <p>Made in <span class="footer__year">2023</span> by Łukasz Sodolski</p>
+    </footer>
     <script src="scripts.js"></script>
   </body>
 </html>
