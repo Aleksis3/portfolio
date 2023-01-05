@@ -46,8 +46,15 @@
               <div class="hero__cta">
                 <a class="button hero__button">Moje Projekty</a>
                 <div class="hero__cta__icons">
-                  <i class="fa-brands fa-github hero__cta__icon"></i>
-                  <i class="fa-brands fa-linkedin hero__cta__icon"></i>
+                  <a href="https://github.com/Aleksis3" target="_blank">
+                    <i class="fa-brands fa-github hero__cta__icon"></i
+                  ></a>
+                  <a
+                    class="hero__cta__icon hero__cta__icon--cv"
+                    href="https://www.dropbox.com/s/zxyn7wecq411w92/%C5%81ukasz%20Sodolski%20-%20CV.pdf?dl=1"
+                    >CV</a
+                  >
+                  <!-- <i class="fa-brands fa-linkedin hero__cta__icon"></i> -->
                 </div>
               </div>
             </div>
@@ -119,7 +126,7 @@
         <h2 class="section-title">Moje projekty</h2>
         <div class="projects__row">
           <div class="projects__img-container">
-            <a href="https://yeet-shop.netlify.app" target="_blank">
+            <a href="https://anime-nyaan.netlify.app/" target="_blank">
               <img class="projects__img" src="./img/nyaan.webp" alt="" />
             </a>
             <div class="projects__img-text">
@@ -217,7 +224,12 @@
               <span class="form__email">l.sodolski@gmail.com</span>
             </p>
           </div>
-          <form action="" class="contact__form">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            class="contact__form"
+          >
             <div class="form__inputs-container">
               <div class="form__input-container">
                 <label for="name">Twoje imię:</label>

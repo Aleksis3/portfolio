@@ -171,12 +171,23 @@ header {
   padding: 4px 12px 4px 12px;
   margin-right: 15rem;
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
 .hero__cta__icon {
   font-size: 3.5rem;
   cursor: pointer;
+}
+
+.hero__cta__icon--cv {
+  border: 1px black solid;
+  font-size: 2.1rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 4px;
 }
 
 .fa-clock {
@@ -263,6 +274,8 @@ header {
 
 .projects__img-text {
   display: flex;
+  text-decoration: underline;
+  text-underline-offset: 2px;
   justify-content: space-around;
   width: 80%;
   margin-top: 1rem;
