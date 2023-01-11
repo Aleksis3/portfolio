@@ -15,11 +15,10 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-const form = document.getElementsByName("contact");
-const formData = new FormData(form.target);
-const submitBtn = document.getElementById("form__submit-btn");
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const myForm = event.target;
+  const formData = new FormData(myForm);
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -27,6 +26,8 @@ submitBtn.addEventListener("click", (e) => {
   })
     .then(() => console.log("Form successfully submitted"))
     .catch((error) => alert(error));
-});
+};
 
-console.log(form);
+document
+  .getElementById("contact__form")
+  .addEventListener("submit", handleSubmit);
