@@ -15,6 +15,7 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
+// Submit the contact form
 const handleSubmit = (event) => {
   event.preventDefault();
   const myForm = event.target;
@@ -24,10 +25,25 @@ const handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
+    .then((modal.style.display = "block"))
+    .then(myForm.reset())
     .catch((error) => alert(error));
 };
 
 document
   .getElementById("contact__form")
   .addEventListener("submit", handleSubmit);
+
+// Modal displaying after successful form submission
+const modal = document.getElementById("modal");
+const modalCloseBtn = document.getElementsByClassName("modal__close-btn")[0];
+
+modalCloseBtn.onclick = function () {
+  modal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};

@@ -44,14 +44,16 @@
               </p>
 
               <div class="hero__cta">
-                <a class="button hero__button">Moje Projekty</a>
+                <a class="button hero__button" href="#portfolio"
+                  >Moje Projekty</a
+                >
                 <div class="hero__cta__icons">
                   <a href="https://github.com/Aleksis3" target="_blank">
                     <i class="fa-brands fa-github hero__cta__icon"></i
                   ></a>
                   <a
                     class="hero__cta__icon hero__cta__icon--cv"
-                    href="https://www.dropbox.com/s/zxyn7wecq411w92/%C5%81ukasz%20Sodolski%20-%20CV.pdf?dl=1"
+                    href="https://www.dropbox.com/s/ctomkkeoqstbsma/Łukasz Sodolski - CV.pdf?dl=1"
                     >CV</a
                   >
                   <!-- <i class="fa-brands fa-linkedin hero__cta__icon"></i> -->
@@ -198,18 +200,18 @@
             />
           </div>
           <div class="about__text-content">
-            <p class="about__text-content__top">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
-              laboriosam dolore autem, quam alias ratione explicabo veritatis
-              natus, deleniti consequatur molestiae? Doloribus odit eius harum
-              neque dolore velit laboriosam? Iste!
+            <p class="b">
+              Jestem 21-letnim programistą z zapędem do kodowania oraz kreowania
+              przyjemnych, a przy tym - co równie istotne - inkluzywnych oraz
+              przyjaznych użytkownikom doświadczeń płynących z przeglądania
+              współczesnych stron internetowych.
             </p>
             <br />
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              molestias corporis dolorum facere perspiciatis vel cupiditate
-              itaque ipsum. Praesentium officia ipsam inventore, unde non dicta
-              porro nostrum in modi voluptates.
+              W wolnym czasie lubię zapoznawać się z co ciekawszymi zakątkami
+              popkulturowego świata, czy też przemyśleniami starożytnych Greków
+              oraz autorów tworzących w nurcie egzystencjalizmu. Specyficzny
+              rodzaj przyjemności sprawia mi również bieganie.
             </p>
           </div>
         </div>
@@ -221,7 +223,9 @@
             <p>Porozmawiajmy o współpracy!</p>
             <p>
               Jestem równiez dostępny pod adresem:
-              <span class="form__email">l.sodolski@gmail.com</span>
+              <a href="mailto:l.sodolski@gmail.com" class="form__email"
+                >l.sodolski@gmail.com</a
+              >
             </p>
           </div>
           <form
@@ -244,7 +248,7 @@
               <div class="form__input-container">
                 <label for="email">Adres E-mail</label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   id="email"
                   class="form__input"
@@ -260,7 +264,10 @@
               type="text"
               required
             ></textarea>
-            <button id="form__submit-btn" class="button button--wide">
+            <button
+              id="form__submit-btn"
+              class="button button--wide contact__form-btn"
+            >
               Wyślij!
             </button>
           </form>
@@ -270,6 +277,17 @@
     <footer>
       <p>Made in <span class="footer__year">2023</span> by Łukasz Sodolski</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <h1 class="modal__header">Dziękuję za kontakt!</h1>
+        <p class="modal__text-main">
+          Postaram się odezwać tak szybko, jak tylko to będzie możliwe
+        </p>
+        <span class="modal__close-btn button">Zamknij</span>
+      </div>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>

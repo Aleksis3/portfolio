@@ -227,7 +227,6 @@ header {
 
 .skills__img-row {
   display: flex;
-
   justify-content: space-around;
 }
 
@@ -376,6 +375,10 @@ header {
   bottom: 3rem;
 }
 
+.about__text-content {
+  font-size: 2.2rem;
+}
+
 @media only screen and (max-width: 48rem) {
   .about__wrapper {
     flex-direction: column;
@@ -396,6 +399,10 @@ header {
 
 /* CONTACT */
 
+.contact {
+  position: relative;
+}
+
 .contact__text {
   display: flex;
   flex-direction: column;
@@ -403,7 +410,6 @@ header {
   background-color: var(--purple);
   padding: 1rem;
   color: white;
-
   font-weight: bold;
   margin: -3rem 0 3rem 0;
 }
@@ -442,8 +448,12 @@ header {
   padding: 1rem 2rem;
 }
 
-.contact__form-button {
-  width: 10rem;
+.contact__form-btn {
+  font-weight: bold;
+}
+
+.contact__form-btn:hover {
+  scale: 1.05;
 }
 
 .contact__form-message {
@@ -459,6 +469,51 @@ header {
     flex-direction: column;
   }
 }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal */
+.modal__content {
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.modal__header {
+  color: var(--purple);
+  font-size: 3.5rem;
+}
+
+.modal__text-main {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+/* The Close Button */
+.modal__close-btn {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* FOOTER */
 footer {
   font-size: var(--font-s);
