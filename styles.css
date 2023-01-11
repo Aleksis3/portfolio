@@ -338,7 +338,6 @@ header {
 }
 
 .about {
-  min-height: 50vh;
   font-size: var(--font-m);
 }
 
