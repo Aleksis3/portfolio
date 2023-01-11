@@ -1,4 +1,4 @@
-// Enables skill rows animations after reaching a certain high
+// Enables skill rows animations after reaching the desired height
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
   for (let i = 0; i < reveals.length; i++) {
@@ -14,3 +14,19 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 reveal();
+
+const form = document.getElementsByName("contact");
+const formData = new FormData(form.target);
+const submitBtn = document.getElementById("form__submit-btn");
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+});
+
+console.log(form);
