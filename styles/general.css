@@ -1,0 +1,143 @@
+html,
+body {
+  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 58rem) {
+  html,
+  body {
+    font-size: 45%;
+  }
+}
+
+:root {
+  --blue: #4dabf7;
+  --blue--2: #3a86ff;
+  --purple: #8338ec;
+  --font-s: 1.5rem;
+  --font-m: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.max-size-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__content {
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.modal__header {
+  color: var(--purple);
+  font-size: 3.5rem;
+}
+
+.modal__text-main {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.modal__close-btn {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  font-size: var(--font-s);
+  border-top: 1px black solid;
+  background: #eee;
+  margin-top: 3rem;
+  padding: 0.5rem 3rem;
+}
+
+.footer__year {
+  color: var(--blue--2);
+  font-size: bold;
+}
+
+.section-title {
+  font-size: 4rem;
+  font-weight: 400;
+  width: fit-content;
+  margin: 5rem auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  border-bottom: 3px #3a86ff solid;
+}
+
+.button {
+  background-color: #eeeeee;
+  color: white;
+  padding: 8px 12px;
+  border: 1px #000 solid;
+  border-radius: 10rem;
+  background-color: var(--purple);
+  cursor: pointer;
+}
+
+.button--wide {
+  width: 15rem;
+}
+
+.reveal {
+  position: relative;
+  transition: 2.3s ease-out all;
+  opacity: 0;
+}
+
+.reveal.left {
+  transform: translateX(-100%);
+}
+
+.reveal.right {
+  transform: translateX(100%);
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}

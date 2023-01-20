@@ -1,0 +1,70 @@
+.contact {
+  position: relative;
+}
+
+.contact__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--purple);
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  margin: -3rem 0 3rem 0;
+}
+
+.contact__container {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.form__email {
+  text-decoration: underline;
+}
+
+.contact__form {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__inputs-container {
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.form__input-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.form__input {
+  font-size: 2rem;
+  border: 2px var(--purple) solid;
+  padding: 1rem 2rem;
+}
+
+.contact__form-btn {
+  font-weight: bold;
+}
+
+.contact__form-btn:hover {
+  scale: 1.05;
+}
+
+.contact__form-message {
+  height: 30rem;
+  max-width: 80%;
+  border: 2px var(--purple) solid;
+  width: 50rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 30rem) {
+  .form__inputs-container {
+    flex-direction: column;
+  }
+}

@@ -15,7 +15,7 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-// Submit the contact form
+// Submits the contact form
 const handleSubmit = (event) => {
   event.preventDefault();
   const myForm = event.target;
