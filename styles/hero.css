@@ -56,6 +56,10 @@
   line-height: 4rem;
 }
 
+.hero__p-3 span {
+  color: var(--blue--2);
+}
+
 .hero__text-bottom {
   animation: 5s slide-up both;
   animation-delay: 500ms;
@@ -66,7 +70,7 @@
 }
 
 .hero__cta {
-  margin-top: 3rem;
+  margin-top: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,6 +78,11 @@
 
 .hero__button {
   animation: scale 6.5s;
+  background-color: 1px #000 solid;
+}
+
+.hero__button:hover {
+  scale: 1.05;
 }
 
 .hero__cta__icons {
@@ -87,6 +96,10 @@
 .hero__cta__icon {
   font-size: 3.5rem;
   cursor: pointer;
+}
+
+.hero__cta__icon:hover {
+  scale: 1.05;
 }
 
 .hero__cta__icon--cv {

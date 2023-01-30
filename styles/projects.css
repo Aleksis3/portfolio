@@ -19,7 +19,6 @@
   position: relative;
   flex-direction: column;
   flex: 1 0 50%;
-  /* border-left: 8px purple solid; */
   padding-left: 5rem;
   padding-top: 5rem;
 }

@@ -47,6 +47,11 @@
   padding: 1rem 2rem;
 }
 
+.form__input::placeholder {
+  text-align: center;
+  color: rgb(63, 63, 63);
+}
+
 .contact__form-btn {
   font-weight: bold;
 }
