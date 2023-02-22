@@ -55,7 +55,7 @@
                   ></a>
                   <a
                     class="hero__cta__icon hero__cta__icon--cv"
-                    href="https://www.dropbox.com/s/j83lggw9td4yt16/%C5%81ukasz%20Sodolski%20-%20CV.pdf?dl=1"
+                    href="https://www.dropbox.com/s/15xvvfzfia2vafs/Łukasz Sodolski - CV.pdf?dl=1"
                     >CV</a
                   >
                   <!-- <i class="fa-brands fa-linkedin hero__cta__icon"></i> -->
@@ -108,6 +108,20 @@
           </div>
           <div class="skills__img-row reveal left">
             <figure>
+              <img class="skills__img" src="/img/mysql.png" alt="" />
+              <figcaption class="skills__figcaption">My SQL</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/express.png" alt="" />
+              <figcaption class="skills__figcaption">Express.js</figcaption>
+            </figure>
+            <figure>
+              <img class="skills__img" src="/img/mui.png" alt="" />
+              <figcaption class="skills__figcaption">Material UI</figcaption>
+            </figure>
+          </div>
+          <div class="skills__img-row reveal right">
+            <figure>
               <img class="skills__img" src="/img/sass-logo.png" alt="" />
               <figcaption class="skills__figcaption">Sass</figcaption>
             </figure>
@@ -124,14 +138,9 @@
               <figcaption class="skills__figcaption">Git</figcaption>
             </figure>
           </div>
-          <div class="skills__img-row reveal right">
-            <figure>
-              <img class="skills__img" src="/img/mui.png" alt="" />
-              <figcaption class="skills__figcaption">Material UI</figcaption>
-            </figure>
-          </div>
         </div>
       </section>
+
       <section class="projects max-size-wrapper" id="portfolio">
         <h2 class="section-title">My Projects</h2>
         <div class="projects__row">
@@ -188,11 +197,46 @@
 
         <div class="projects__row">
           <div class="projects__img-container">
-            <img
-              class="projects__img"
-              src="./img/yoga.PNG"
-              alt="screenshot of project"
-            />
+            <a href="https://sequent.onrender.com/" target="_blank">
+              <img
+                class="projects__img"
+                src="./img/sequent.PNG"
+                alt="screenshot of project"
+              />
+            </a>
+            <div class="projects__img-text">
+              <a href="https://github.com/Aleksis3/sequent" target="_blank"
+                >Source Code</a
+              >
+              <a href="https://sequent.onrender.com/" target="_blank"
+                >See <span class="projects__live">LIVE</span></a
+              >
+            </div>
+          </div>
+          <div class="projects__text-container">
+            <p class="projects__text">
+              A personal development app made for keeping track of one's habits
+              throughout the year. Frontend was made with the use of React,
+              while the backend side of things is being handled by Node.js,
+              Express and MySQL.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects__row">
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Landing page for a Yoga venue, made using React and MaterialUI.
+            </p>
+          </div>
+          <div class="projects__img-container">
+            <a href="https://yoga-house.netlify.app/" target="_blank">
+              <img
+                class="projects__img"
+                src="./img/yoga.PNG"
+                alt="screenshot of project"
+              />
+            </a>
             <div class="projects__img-text">
               <a href="https://github.com/Aleksis3/yoga-house" target="_blank"
                 >Source Code</a
@@ -202,18 +246,9 @@
               >
             </div>
           </div>
-          <div class="projects__text-container">
-            <p class="projects__text">
-              Landing page for a Yoga venue, made using React and MaterialUI.
-            </p>
-          </div>
         </div>
+
         <div class="projects__row">
-          <div class="projects__text-container">
-            <p class="projects__text">
-              Current portfolio page, styled with the use of vanilla CSS.
-            </p>
-          </div>
           <div class="projects__img-container">
             <img
               class="projects__img"
@@ -225,6 +260,11 @@
                 >Source Code</a
               >
             </div>
+          </div>
+          <div class="projects__text-container">
+            <p class="projects__text">
+              Current portfolio page, styled with the use of vanilla CSS.
+            </p>
           </div>
         </div>
       </section>
