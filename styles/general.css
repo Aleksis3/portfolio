@@ -7,6 +7,10 @@ body {
   width: 100%;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media only screen and (max-width: 58rem) {
   html,
   body {
@@ -17,7 +21,9 @@ body {
 :root {
   --blue: #4dabf7;
   --blue--2: #3a86ff;
+  --blue--3: #4263eb;
   --purple: #8338ec;
+  --purple--2: #5f3dc4;
   --font-s: 1.5rem;
   --font-m: 2rem;
 }

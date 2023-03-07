@@ -1,0 +1,70 @@
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  z-index: 10000000;
+}
+
+.mobile-nav__links {
+  background-color: var(--purple);
+  text-align: center;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  border: 2px black solid;
+  text-decoration: underline var(--purple) 3px;
+  text-underline-offset: 3px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.mobile-nav__link {
+  border-bottom: 5px var(--blue--2) solid;
+}
+
+.hamburger {
+  position: absolute;
+  display: block;
+  top: 1.5rem;
+  right: 1.6rem;
+  border: 2px black solid;
+  background-color: var(--blue--3);
+  border-radius: 50%;
+  padding: 1rem 1.3rem;
+  z-index: 20000;
+  cursor: pointer;
+}
+
+.hamburger__bar1,
+.hamburger__bar2,
+.hamburger__bar3 {
+  z-index: 50000;
+  width: 35px;
+  height: 5px;
+  background-color: var(--purple--2);
+  font-weight: bold;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger__change-icon .hamburger__bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.hamburger__change-icon .hamburger__bar2 {
+  opacity: 0;
+}
+
+.hamburger__change-icon .hamburger__bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media only screen and (max-width: 30rem) {
+  .mobile-nav {
+    display: flex;
+  }
+}

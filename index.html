@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/about.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/mobileNav.css" />
   </head>
   <body>
     <header id="header">
@@ -35,6 +36,19 @@
         </ul>
       </nav>
     </header>
+    <nav class="mobile-nav">
+      <div class="hamburger">
+        <div class="hamburger__bar1"></div>
+        <div class="hamburger__bar2"></div>
+        <div class="hamburger__bar3"></div>
+      </div>
+      <ul class="mobile-nav__links hidden">
+        <li><a class="mobile-nav__link" href="#skills">Skills</a></li>
+        <li><a class="mobile-nav__link" href="#portfolio">Projects</a></li>
+        <li><a class="mobile-nav__link" href="#about">About me</a></li>
+        <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="hero">
         <div class="hero__text-container">
@@ -223,7 +237,7 @@
           </div>
         </div>
 
-        <div class="projects__row">
+        <div class="projects__row projects__row--2">
           <div class="projects__text-container">
             <p class="projects__text">
               Landing page for a Yoga venue, made using React and MaterialUI.
