@@ -18,15 +18,16 @@
 
 .hero__shape {
   width: 50%;
+  /* clip-path: polygon(48% 0, 100% 0, 100% 100%, 29% 27%);
+  clip-path: polygon(100% 0, 10% 0, 100% 100%); */
   clip-path: polygon(51% 0, 100% 0, 100% 100%, 31% 28%);
-  clip-path: polygon(48% 0, 100% 0, 100% 100%, 29% 27%);
-  clip-path: polygon(100% 0, 10% 0, 100% 100%);
   background-color: var(--purple);
 }
 
 .hero__text {
   margin-bottom: 5rem;
   /* width: 60%; */
+
   white-space: nowrap;
   padding: 2rem 3rem;
   font-weight: bold;
@@ -56,17 +57,13 @@
   line-height: 4rem;
 }
 
-.hero__p-3 span {
-  color: var(--blue--2);
-}
-
 .hero__text-bottom {
   animation: 5s slide-up both;
   animation-delay: 500ms;
 }
 
 .hero__blue {
-  color: #3a86ff;
+  color: var(--blue--4);
 }
 
 .hero__cta {

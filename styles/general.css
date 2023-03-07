@@ -5,6 +5,7 @@ body {
   scroll-behavior: smooth;
   font-size: 62.5%;
   width: 100%;
+  scroll-padding-top: 5rem;
 }
 
 .hidden {
@@ -14,7 +15,7 @@ body {
 @media only screen and (max-width: 58rem) {
   html,
   body {
-    font-size: 45%;
+    font-size: 40%;
   }
 }
 
@@ -22,7 +23,10 @@ body {
   --blue: #4dabf7;
   --blue--2: #3a86ff;
   --blue--3: #4263eb;
+  --blue--4: #1864ab;
+
   --purple: #8338ec;
+  --purple: #ab1864;
   --purple--2: #5f3dc4;
   --font-s: 1.5rem;
   --font-m: 2rem;
@@ -115,13 +119,17 @@ footer {
   border-bottom: 3px #3a86ff solid;
 }
 
+.section {
+  display: block;
+}
+
 .button {
   background-color: #eeeeee;
   color: white;
   padding: 8px 12px;
   border: 1px #000 solid;
   border-radius: 10rem;
-  background-color: var(--purple);
+  background-color: #000;
   cursor: pointer;
 }
 

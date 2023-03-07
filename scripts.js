@@ -16,18 +16,6 @@ function revealSkills() {
 
 window.addEventListener("scroll", revealSkills);
 
-// When on mobile toggles the mobile nav el after 100vh
-const toggleMobileNav = () => {
-  const mobileNav = document.getElementsByClassName("mobile-nav")[0];
-  if (window.scrollY > window.innerHeight) {
-    mobileNav.classList.remove("hidden");
-  } else {
-    mobileNav.classList.add("hidden");
-  }
-};
-
-window.addEventListener("scroll", toggleMobileNav);
-
 // Submits the contact form
 const handleSubmit = (event) => {
   event.preventDefault();
@@ -61,9 +49,19 @@ window.onclick = function (event) {
   }
 };
 
-// MOBILE NAV
+// Make header visible again after scrolling pass the hero section
+const toggleHeader = () => {
+  const header = document.getElementsByTagName("header")[0];
+  if (window.scrollY > window.innerHeight) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+};
 
-// Toggle between open/closed states of the mobile menu and change hamburger icon accordingly
+window.addEventListener("scroll", toggleHeader);
+
+// Toggle between open/closed states of the mobile nav and change hamburger icon accordingly
 
 const hamburger = document.getElementsByClassName("hamburger")[0];
 const mobileNav = document.getElementsByClassName("mobile-nav__links")[0];

@@ -26,7 +26,11 @@
     <link rel="stylesheet" href="styles/mobileNav.css" />
   </head>
   <body>
-    <header id="header">
+    <header tabindex="-1">
+      <a class="header__logo" href="#">
+        Ł.S. -<br />
+        portfolio
+      </a>
       <nav class="main-nav">
         <ul class="main-nav__links">
           <li><a class="main-nav__link" href="#skills">Skills</a></li>
@@ -35,20 +39,21 @@
           <li><a class="main-nav__link" href="#contact">Contact</a></li>
         </ul>
       </nav>
-    </header>
-    <nav class="mobile-nav">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__links hidden">
+          <li><a class="mobile-nav__link" href="#skills">Skills</a></li>
+          <li><a class="mobile-nav__link" href="#portfolio">Projects</a></li>
+          <li><a class="mobile-nav__link" href="#about">About me</a></li>
+          <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <div class="hamburger">
         <div class="hamburger__bar1"></div>
         <div class="hamburger__bar2"></div>
         <div class="hamburger__bar3"></div>
       </div>
-      <ul class="mobile-nav__links hidden">
-        <li><a class="mobile-nav__link" href="#skills">Skills</a></li>
-        <li><a class="mobile-nav__link" href="#portfolio">Projects</a></li>
-        <li><a class="mobile-nav__link" href="#about">About me</a></li>
-        <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    </header>
+
     <main>
       <section class="hero">
         <div class="hero__text-container">
@@ -59,7 +64,8 @@
             </p>
             <div class="hero__text-bottom">
               <p class="hero__p-3">
-                I specialize in <span>Frontend</span> Development
+                I specialize in
+                <span class="hero__blue">Frontend</span> Development
               </p>
               <div class="hero__cta">
                 <a class="button hero__button" href="#portfolio">My projects</a>
@@ -69,7 +75,7 @@
                   ></a>
                   <a
                     class="hero__cta__icon hero__cta__icon--cv"
-                    href="https://www.dropbox.com/s/wwfn5rbsftxeb57/%C5%81ukasz%20Sodolski%20-%20CV.pdf?dl=1"
+                    href="https://www.dropbox.com/s/jrg9y6899a17c8z/%C5%81ukasz%20Sodolski%20-%20CV.pdf?dl=1"
                     >CV</a
                   >
                   <!-- <i class="fa-brands fa-linkedin hero__cta__icon"></i> -->
