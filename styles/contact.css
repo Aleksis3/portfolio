@@ -54,6 +54,7 @@
 
 .contact__form-btn {
   font-weight: bold;
+  background-color: var(--purple);
 }
 
 .contact__form-btn:hover {

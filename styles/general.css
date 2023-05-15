@@ -23,11 +23,10 @@ body {
   --blue: #4dabf7;
   --blue--2: #3a86ff;
   --blue--3: #4263eb;
-  --blue--4: #1864ab;
-
+  --blue--4: #0081cf;
   --purple: #8338ec;
-  --purple: #ab1864;
   --purple--2: #5f3dc4;
+  --purple--3: #ab1864;
   --font-s: 1.5rem;
   --font-m: 2rem;
 }

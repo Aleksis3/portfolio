@@ -18,9 +18,7 @@
 
 .hero__shape {
   width: 50%;
-  /* clip-path: polygon(48% 0, 100% 0, 100% 100%, 29% 27%);
-  clip-path: polygon(100% 0, 10% 0, 100% 100%); */
-  clip-path: polygon(51% 0, 100% 0, 100% 100%, 31% 28%);
+  clip-path: polygon(100% 0, 10% 0, 100% 100%);
   background-color: var(--purple);
 }
 

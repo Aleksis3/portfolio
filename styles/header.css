@@ -64,8 +64,8 @@ li::before {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 6px;
-  background-color: var(--purple);
+  height: 4px;
+  background-color: #111;
   transition: transform 0.35s ease-out;
   left: 0;
 }
@@ -82,12 +82,12 @@ li::before {
 
 .main-nav__links > li:hover {
   font-size: 2.32rem;
-  border-left: 6px var(--purple) solid;
-  border-right: 6px var(--purple) solid;
+  border-left: 4px #000 solid;
+  border-right: 4px #000 solid;
 }
 
 .main-nav__links > li:not(:first-child):hover {
-  margin-left: -5px;
+  margin-left: -4px;
 }
 
 .main-nav__links > li:hover::after {
@@ -136,7 +136,8 @@ li::before {
 .hamburger {
   position: absolute;
   z-index: 9999;
-  top: 1rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
   right: 3rem;
   display: none;
   cursor: pointer;
